@@ -4,7 +4,7 @@
              <div class="page-center-in__logo">
                 <img class="img-logo" src="public/img/logo-oroc.png" alt="">
             </div>
-	        <a href="../Home/" class="site-logo">
+	        <a href="../RegistroNomina/" class="site-logo">
 	            <img class="hidden-md-down" src="../../public/img/logo-oroc.png" alt="">
 	        </a>
 	
