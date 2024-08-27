@@ -6612,8 +6612,8 @@ hr.margin-4 {
 .btn {
   -webkit-border-radius: 3px;
   border-radius: 3px;
-  border: solid 1px #ff0000;
-  background: #ff0000;
+  border: solid 1px #ffae00;
+  background: #ffae00;
   color: #fff;
   font-weight: 600;
 }
@@ -6627,8 +6627,8 @@ hr.margin-4 {
   width: 30px;
 }
 .btn:hover {
-  background-color: #fc1616af;
-  border-color: #fc1616;
+  background-color: #fcc616a5;
+  border-color: #fcc6169e;
 }
 .btn:active {
   background-color: #f30000;

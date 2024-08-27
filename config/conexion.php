@@ -4,10 +4,10 @@
         protected $dbh;
         protected function Conexion () {
             try {
-               $conectar = $this->dbh = new mysqli("localhost", "root", "", "u216531_nomina");
+               $conectar = $this->dbh = new PDO('mysql:host=localhost;dbname=u216531_nomina', 'root', '');
                 return $conectar;
             
-            } catch (Exception $e) {
+            } catch (PDOException $e) {
                 print "¡Error BD! :" . $e->getMessage() . "<br/>";
                 die();
                 //throw $th;
@@ -17,7 +17,7 @@
             return $this->dbh->query("SET NAMES 'utf8'");
         }
         public function ruta () {
-            return "http://localhost/Help-Desk/";
+            return "http://localhost/oroc-constructores/";
         }
     }
 

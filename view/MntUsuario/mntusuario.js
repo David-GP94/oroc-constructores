@@ -64,23 +64,23 @@ $(document).ready(function(){
     
 });
 
-function editar (usu_id) {
+function editar (user_id) {
     $('#mdltitulo').html('Editar Usuario')
-    $.post("../../controller/usuario.php?op=mostrarusuario",{ usu_id : usu_id}, function (data){
+    $.post("../../controller/usuario.php?op=mostrarusuario",{ user_id : user_id}, function (data){
         data = JSON.parse(data);
-         $('#usu_nom').val(data.usu_nom);
-         $('#usu_ape').val(data.usu_ape);
+         $('#user_names').val(data.user_names);
+         $('#user_last_name').val(data.user_last_name);
          $('#usu_correo').val(data.usu_correo);
          $('#usu_pass').val(data.usu_pass);
-         $('#usu_id').val(data.usu_id);
-         $('#role_id').val(data.rol_id).trigger('change');
+         $('#user_id').val(data.user_id);
+         $('#role_id').val(data.user_role).trigger('change');
        
 
     });
     $('#modal-usuario').modal('show')   
 
 }
-function eliminar (usu_id) {
+function eliminar (user_id) {
     swal({
         title: "¿Estas seguro que deseas eliminar el usuario?",
         text: "",
@@ -94,7 +94,7 @@ function eliminar (usu_id) {
     },
     function(isConfirm) {
         if (isConfirm) {
-            $.post("../../controller/usuario.php?op=eliminar",{ usu_id : usu_id}, function (data){
+            $.post("../../controller/usuario.php?op=eliminar",{ user_id : user_id}, function (data){
 
             });
             $('#usuario_data').DataTable().ajax.reload();
