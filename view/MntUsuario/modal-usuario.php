@@ -9,14 +9,14 @@
             </div>
             <form method="post" id="usuario_form">
                 <div class="modal-body">
-                    <input type="hidden" id="usu_id" name="usu_id">
+                    <input type="hidden" id="user_id" name="user_id">
                     <div class="form-group">
-                        <label class="form-label" for="usu_nom">Nombre</label>
-                        <input type="texto" class="form-control" id="usu_nom" name="usu_nom" placeholder="Ingrese Nombre" required>
+                        <label class="form-label" for="user_names">Nombre</label>
+                        <input type="texto" class="form-control" id="user_names" name="user_names" placeholder="Ingrese Nombre" required>
                     </div>
                     <div class="form-group">
-                        <label class="form-label" for="usu_ape">Apellido</label>
-                        <input type="texto" class="form-control" id="usu_ape" name="usu_ape" placeholder="Ingrese Apellido" required>
+                        <label class="form-label" for="user_last_name">Apellido</label>
+                        <input type="texto" class="form-control" id="user_last_name" name="user_last_name" placeholder="Ingrese Apellido" required>
                     </div>
                     <div class="form-group">
                         <label class="form-label" for="usu_pass">Correo Electrónico</label>

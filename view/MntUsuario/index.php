@@ -1,11 +1,11 @@
 <?php
     require_once("../../config/conexion.php");
-    if (isset($_SESSION["usu_id"])) {
+    if (isset($_SESSION["user_id"])) {
 ?>
         <!DOCTYPE html>
         <html>
             <?php require_once("../MainHead/head.php"); ?>
-            <title>Exitus Credit Help-Desk-Mantenimiento Usuario</title>
+            <title>Oroc Contructores-Nómina</title>
 
             <body class="with-side-menu">
                 <?php require_once("../MainHeader/header.php"); ?>

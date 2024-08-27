@@ -12,7 +12,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Exitus Credit Help-Desk</title>
+	<title>Oroc Contructores-Nómina</title>
 
 	<link href="img/favicon.144x144.png" rel="apple-touch-icon" type="image/png" sizes="144x144">
 	<link href="img/favicon.114x114.png" rel="apple-touch-icon" type="image/png" sizes="114x114">
@@ -30,11 +30,11 @@
     <div class="page-center">
         <div class="page-center-in">
             <div class="page-center-in__logo">
-                <img class="img-logo" src="public/img/logo-exitus.png" alt="">
+                <img class="img-logo" src="public/img/logo-oroc.png" alt="">
             </div>
             <div class="container-fluid">
                 <form class="sign-box" action="" method="post" id="login_form">
-                    <input type="hidden" id="rol_id" name="rol_id" value="1">
+                    <input type="hidden" id="user_role" name="user_role" value="1">
                     <div class="sign-avatar">
                         <img src="public/img/1.png" alt="" id="img-profile">
                     </div>
@@ -73,18 +73,12 @@
                         }
                     ?>
                     <div class="form-group">
-                        <input type="text" id="usu_correo" name="usu_correo" class="form-control" placeholder="E-Mail"/>
+                        <input type="text" id="user_username" name="user_username" class="form-control" placeholder="E-Mail"/>
                     </div>
                     <div class="form-group">
-                        <input type="password" id="usu_pass" name="usu_pass" class="form-control" placeholder="Password"/>
+                        <input type="password" id="user_password" name="user_password" class="form-control" placeholder="Password"/>
                     </div>
                     <div class="form-group">
-                        <div class="float-right reset">
-                            <a href="reset-password.html">Restablecer Contraseña</a>
-                        </div>
-                        <div class="float-left reset">
-                            <a href="#" id="btnsoporte">Acceso Soporte</a>
-                        </div>
                     </div>
                     <input type="hidden" name="enviar" class="form-control" value="si">
                     <button type="submit" class="btn btn-rounded">Acceder</button>
